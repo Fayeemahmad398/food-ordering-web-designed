@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(247, 241, 241);
+
+}
+label{
+    color:white
+}
+/* navigation bar */
+.navbar::before{
+    content: '';
+    background-color: rgb(53, 6, 6);
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+.navbar{
+    /* border:1px solid blue; */
+   
+    height: 90px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+
+}
+/* logo icon */
+
+.icon-logo {
+    height: 69px;
+    width: 85px;
+    margin: 6px;
+    border-radius: 45px;
+}
+.navbar ul {
+    display: flex;
+    /* flex-direction:  row; */
+    font-family: "Trirong", serif;
+    
+}
+
+.navbar ul li{
+
+    list-style: none;
+    font-size: 1rem;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 20px;
+    color: white;
+
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
+
+/* home Section */
+
+.home{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Trirong", serif;
+    position: relative;
+    align-items: center;
+    height: 400px;
+    padding: 3px 200px;
+    color: white;
+}
+.home::before{
+    content:"";
+    background-image:url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;;
+    max-width: 100%;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    right: 0px !important;
+    opacity: 0.9;
+
+}
+/* css utility */
+.h-primary{
+    padding: 12px;
+    font-size: 2.3rem;
+    text-align: center;
+}
+.home p{
+    font-size: 1.2rem;
+}
+
+.btn{
+    padding: 6px 18;
+    margin:5px;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+/* services boxes */
+
+
+
+.services{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    text-align: center;
+
+}
+.services .box{
+border: 2px solid rgb(198, 198, 183);
+height: 360px;
+margin: 15px;
+padding: 10px;
+border-radius: 30px;
+background-color: #e9d5d5;
+
+}
+.box img{
+    height: 200px;
+}
+.center{
+    text-align: center;
+}
+
+
+/* Client-section */
+.client-section::before{
+    content: '';
+    background: url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.underline{
+    color: black;
+}
+
+
+.client-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 375px;
+
+}
+.client{
+    padding: 30px;
+}
+.client img{
+    height: 140px;
+    border-radius: 70px;
+}
+
+/* contact-us  section*/
+.Contact-us{
+    position: relative;
+    height: 600px;
+
+
+}
+.Contact-us input,textarea{
+    width: 90%;
+    padding: 0.3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+
+
+}
+ .Contact-us::before{
+    content: "";
+    background: url("data:image/jpeg;base64,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") no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 95%;
+    opacity: 0.6;
+    top: 0px;
+
+
+ }
+
+ .container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ 
+ footer{
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+ }
+/* upto 1100px max width screen  */
+
+ @media (max-width:1100px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        height: 125px;
+        gap: 2px;
+    }
+    
+.navbar ul li{
+
+    font-size: 0.6rem;
+}
+
+
+ul li a{
+    display: block;
+    padding: 2px 10px;
+
+}
+
+.icon-logo {
+    height: 60px;
+    width: 70px;
+    margin: 1px;
+    border-radius: 45px;
+}
+    .home{
+        height: 600px;
+        padding: 2px 90px;
+
+    }
+    .home::before{
+        height: 100%;
+    }
+
+    .home p{
+        font-size: 13px;
+    }
+    .h-primary{
+
+        padding: 6px;
+        font-size: 22px;
+    }
+    
+ }
+
+ @media (max-width:1000px) {
+    
+.services{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+}
+
+.box img{
+    height: 100px;
+}
+.client{
+    padding: 5px;
+}
+.client img{
+    height: 70px;
+    border-radius: 35px;
+}
+
+
+    
+    
+ }
+
+@media (max-width:500px) {
+    .home{
+        padding: 1px 50px;
+    }
+
+    .home p{
+        font-size: 11px;
+    }
+    .h-primary{
+
+        padding: 2px;
+        font-size: 22px;
+    }
+    
+
+.services{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+
+}
+.box img{
+    height: 100px;
+}
+.client{
+    padding: 5px;
+}
+.client img{
+    height: 60px;
+    border-radius: 45px;
+}
+
+
+.client-section::before {
+    content: '';
+    background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.client-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
+
+
+@media (max-width:550px),(min-width:2500px) {
+
+    .client-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 221px;
+    }
+    
+.client-section::before {
+    
+    width: 100%;
+    height: 10%;
+}
+}
